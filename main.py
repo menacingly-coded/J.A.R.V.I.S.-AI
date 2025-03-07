@@ -7,7 +7,7 @@ import pyttsx3
 import google.generativeai as genai
 
 # Configure Gemini API
-genai.configure(api_key="AIzaSyBbNu0ABf8UzoUBNn2DzDJEQdW6u1ZhbEs")
+genai.configure(api_key)
 
 # Initialize text-to-speech engine
 engine = pyttsx3.init()
@@ -165,7 +165,7 @@ def chat(query):
     return response["choices"][0]["text"]
 
 import google.generativeai as genai
-genai.configure(api_key="AIzaSyBbNu0ABf8UzoUBNn2DzDJEQdW6u1ZhbEs")
+genai.configure(api_key)
 models = genai.list_models()
 
 for model in models:
