@@ -1,7 +1,7 @@
 import google.generativeai as genai
 
 # Set your Gemini API key
-genai.configure(api_key="AIzaSyBbNu0ABf8UzoUBNn2DzDJEQdW6u1ZhbEs")
+genai.configure(api_key)
 
 def chat_with_gemini(query):
     """Send query to Gemini AI and get response"""
